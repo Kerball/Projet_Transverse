@@ -1,0 +1,77 @@
+<!doctype>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Mon magasin en ligne 10000% bons plans</title>
+        <!-- Load Vue followed by Vue Router -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/http-vue-loader/src/httpVueLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-router/dist/vue-router.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body style="background-color:rgb(29, 35, 49);">
+        <div id="app">
+          <header>
+            <img class ="img" src="/img/Capture.png">
+            <nav class="nav">
+              <router-link to='/' class="rout">Accueil</router-link>
+              <router-link to='/panier'class="rout" >Panier</router-link>
+              <router-link to='/inscription'class="rout" >Inscription</router-link>
+              <router-link to='/connexion' class="rout" >Connexion</router-link>
+              <router-link to='/administration' class="rout" >Administration</router-link>
+              <router-link to='/equipe' class="rout" >Equipe</router-link>
+            </nav>
+          </header>
+          <main>
+            <router-view
+              :articles="articles"
+              :panier="panier"
+              :connected="connected"
+              @ajou-panier='ajouPanier'
+              @add-article="addArticle"
+              @delete-article-panier="deleteArticlePanier"
+              @up-quant="upQuant"
+              @delete-article="deleteArticle"
+              @update-article="updateArticle"
+              @send-inscription="sendInscription"
+              @send-connexion="sendConnexion"
+              @pay="pay"
+            ></router-view>
+          </main>
+        </div>
+
+
+        <footer>
+          <h2 style="color:white">Cédric CALPOTURA, Arthur LE NEGARET, Adrien KEREZOVIC,Paul-Antoine Dab , Benjamin Amsellem</h2>
+        </footer>
+        <script src="/vue-application.js"></script>
+    </body>
+
+    <style>
+      h1{
+        text-align: center;
+        font-family:arial;
+        margin-bottom: 4%;
+      }
+      .nav{
+      text-align: center;
+      }
+      .rout{
+          font-family: arial;
+          border:2px solid black ;
+          
+          margin: 3%;
+          color: white;
+          background-color: black;
+         padding: 5px;
+      }
+
+      .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        opacity:80%;
+      }
+    </style>
+
+</html>
