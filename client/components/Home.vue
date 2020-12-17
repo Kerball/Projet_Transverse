@@ -7,31 +7,10 @@
       </div>
       <div class="article-content" v-if="editingArticle.id !== article.id">
         <div class="article-title">
-          <h2>{{ article.name }} - {{ article.price }}€</h2>
-          <div>
-            <div v-if="panier && panier.articles.find(a=>a.id === article.id )">
-              <button @click="deleteArticlePanier(article.id)">Supprimer du panier</button>
-            </div>
-            <div v-else>
-              <button @click="addPanier(article.id)">Ajouter au panier</button>
-            </div>
-          <button @click="deleteArticle(article.id)">Supprimer</button>
-          <button @click="editArticle(article)">Modifier</button>
-          </div>
+          <h2>{{ article.name }} </h2>
         </div>
-        <p>{{ article.description }}</p>
-      </div>
-      <div class="article-content" v-else>
-        <div class="article-title">
-          <h2><input type="text" v-model="editingArticle.name"> - <input type="number" v-model="editingArticle.price"></h2>
-          <div>
-            <button @click="sendEditArticle()">Valider</button>
-            <button @click="abortEditArticle()">Annuler</button>
-          </div>
         </div>
-        <p><textarea v-model="editingArticle.description"></textarea></p>
-        <input type="text" v-model="editingArticle.image" placeholder="Lien vers l'image">
-      </div>
+            
     </article>
     <form @submit.prevent="addArticle">
       <h2>Nouveau produit à ajouter</h2>
@@ -109,21 +88,29 @@ module.exports = {
 
 <style scoped>
 .aticle{
-  border: 2px solid black;
-  margin-top: 2%;
+  border:2px solid black;
+  margin-top:10%;
+  
 }
 article {
   display: flex;
+  height: auto;
 }
 
 .article-img {
-  flex: 1;
+
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    
 }
 
 .article-img div {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  margin:auto;
+ 
 }
 
 .article-content {

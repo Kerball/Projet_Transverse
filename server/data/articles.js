@@ -1,73 +1,73 @@
 const articles = [
   {
     id: 1,
-    name: 'Clé USB',
-    description: 'Cette clé usb ravira vos espoirs les plus profonds, avec ses 64Mo de mémoire.',
-    image: 'https://www.cdiscount.com/pdt2/6/6/3/1/300x300/tem6427643911663/rw/128go-128gb-cle-usb-3-0-otg-memoire-flash-drive-pl.jpg',
-    price: 100
+    name: 'League of Legends',
+    description: 'Dans League of Legends, le joueur contrôle un champion aux compétences uniques dont la puissance augmente au fil de la partie se battant contre une équipe de joueurs en temps réel la plupart du temps. L objectif d une partie est, dans la quasi-totalité des modes de jeu, de détruire le « Nexus » ennemi, bâtiment situé au cœur de la base adverse protégé par des tourelles et inhibiteurs les plus profonds, avec ses 64Mo de mémoire.',
+    image: 'https://thumbor.sd-cdn.fr/N5F2__XFoXlS2b4xQe8pyek2SAI=/1200x630/cdn.sd-cdn.fr/wp-content/uploads/2019/07/league-of-legends-mobile.jpg',
+    style: 'MOBA'
   },
   {
     id: 2,
-    name: 'Sac à main',
-    description: 'Ce sac à main est un excellent compagnon de route',
-    image: 'https://www.cdiscount.com/pdt2/9/7/6/1/300x300/gen2008530066976/rw/set-de-sacs-noirs-sac-a-main-sac-a-bandouliere.jpg',
-    price: 5
+    name: 'Call of Duty: Warzone',
+    description: 'C est un jeu de tir à la première personne ou le joueur va devoir se battre à l aide d arme à feu, la particularité de ce Call of Duty est qu il y a une map ou 100 joueurs sont lachées pour pouvoir survivre et le dernier survivant gagne',
+    image: 'https://upload.wikimedia.org/wikipedia/en/7/71/COD_Warzone_cover_art.jpg',
+    style : 'FPS'
   },
   {
     id: 3,
-    name: 'Vélo',
-    description: 'Allez au bout du monde avec ce magnifique vélo',
-    image: 'https://www.cdiscount.com/pdt2/0/1/s/1/300x300/veveng2601s/rw/toimsa-velo-26-cadre-acier-homme-18-vitesse.jpg',
-    price: 150
+    name: 'Apex Legend',
+    description: 'C est un jeu de tir à la première personne ou le joueur va devoir se battre à l aide d arme à feu, la particularité de ce Call of Duty est qu il y a une map ou 100 joueurs sont lachées pour pouvoir survivre et le dernier survivant gagne',
+    image: 'https://www.jvfrance.com/wp-content/uploads/2020/11/apex-legends-1080.jpg',
+    style: 'FPS'
   },
   {
     id: 4,
-    name: 'Trotinette',
-    description: 'Slalommez entre les taxis et les bus avec ce bolide !',
-    image: 'https://www.cdiscount.com/pdt2/8/3/8/1/300x300/auc5900168932838/rw/hypermotion-trottinette-rockster-charge-max-100-k.jpg',
-    price: 50
+    name: 'Rainbow 6 Siege',
+    description: 'Un jeu de guerre ou vous jouez à la première personne, soit en défendant une zone contre d autre joueur ou en attaquant une zone défendue par une team enemie',
+    image: 'https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-siege-meta_image-home-sledge.jpg',
+    style: 'FPS'
   },
   {
     id: 5,
-    name: 'Table de ping pong',
-    description: 'Le moment de détente que tout le monde attend entre deux pauses !',
-    image: 'https://www.cdiscount.com/pdt2/6/0/6/1/300x300/spo4013771089606/rw/sponeta-table-tennis-de-table-table-ping-pong-co.jpg',
-    price: 400
+    name: 'Fortnite',
+    description: 'C est un jeu de tir à la première personne ou le joueur va devoir se battre à l aide d arme à feu, la particularité de ce Call of Duty est qu il y a une map ou 100 joueurs sont lachées pour pouvoir survivre et le dernier survivant gagne',
+    image: 'https://cdn2.unrealengine.com/15br-social-lineup-social-1920x1080-685054651.jpg',
+    style: 'FPS'
   },
   {
     id: 6,
-    name: 'Requin',
-    description: 'Quoi de mieux qu\'un requin pour mettre l\'ambiance dans votre soirée ?',
-    image: 'https://www.cdiscount.com/pdt2/6/5/2/1/300x300/sch4005086147652/rw/figurine-requin-tigre.jpg',
-    price: 15
+    name: 'Among us',
+    description: 'Le loup garou sur ordinateur',
+    image: 'https://www.journaldugeek.com/content/uploads/2020/10/amongus-logo.jpg',
+    style: 'Stratégie'
   },
   {
     id: 7,
-    name: 'Brosse à dents',
-    description: 'Une brosse unique pour vos 32 dents ! Marche aussi avec moins de 32 dents.',
-    image: 'https://www.cdiscount.com/pdt2/6/7/6/1/300x300/sig8717163334676/rw/signal-4-saisons-brosse-a-dents-4-actions-souple-x.jpg',
-    price: 400
+    name: 'Rocket League',
+    description: 'Le crossover entre le foot et la voiture',
+    image: 'https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_RocketLeague_image1600w.jpg',
+    style: 'Jeux de sport'
   },
   {
     id: 8,
-    name: 'Kayak',
-    description: 'Redécouvrez les eaux douces avec ce kayak 100% émotions garanties !',
-    image: 'https://www.cdiscount.com/pdt2/7/7/4/1/300x300/auc2009961531774/rw/kayak-airfusion-2013.jpg',
-    price: 1500
+    name: 'World of Warcraft',
+    description: 'Un jeu ou vous créer votre propre aventure en combattant des monstres au coter d alliers que vous aller vous faire',
+    image: 'https://geeko.lesoir.be/wp-content/uploads/sites/58/2019/09/wow-classic1.jpg',
+    style:'MMORPG'
   },
   {
     id: 9,
-    name: 'Roue de vélo',
-    description: 'Vous avez déconné pendant le tour de france ? Refaites-vous une santé avec ces magnifiques roues',
-    image: 'https://www.cdiscount.com/pdt2/1/6/7/1/300x300/auc3700543419167/rw/roue-marque-velox-paire-fixi-flipflop-white-2x.jpg',
-    price: 100
+    name: 'Dofus',
+    description: 'Un jeu français ou vous créer un personnage et créer votre propre aventure dans le monde des douzes',
+    image: 'https://www.gratuit.be/wp-content/uploads/2019/01/Dofus.jpg',
+    style: 'MMORPG'
   },
   {
     id: 10,
-    name: 'Récupérateur d\'eau de pluie',
-    description: "C'est le moment idéal de l'année pour économiser !",
-    image: 'https://www.cdiscount.com/pdt2/3/4/2/1/300x300/ose4891372830342/rw/recuperateur-eau-de-pluie-%C3%B8-80-mm.jpg',
-    price: 11
+    name: 'Animal Crossing : New Horizon',
+    description: "Créer ta propre vie virtuelle",
+    image: 'https://clubarthurdent.com/wp-content/uploads/2020/04/H2x1_NSwitch_AnimalCrossingNewHorizons_image1600w.jpg',
+    style: 'Simulation'
   }
 ]
 

@@ -33,16 +33,16 @@ async function run () {
         id serial PRIMARY KEY,
         name text,
         description text,
-        style text,
-        price text
+        image text,
+        style text
     )`,
   })
   console.log('Table "articles" créée')
   for (const article of articles) {
     await client.query({
-      text: `INSERT INTO articles(name, description, style, price)
+      text: `INSERT INTO articles(name, description, image, style)
       VALUES ($1, $2, $3, $4)`,
-      values: [article.name, article.description, article.style, article.price]
+      values: [article.name, article.description, article.image, article.style]
     })
   }
   console.log('Articles importés')
