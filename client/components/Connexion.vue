@@ -8,6 +8,7 @@
               <input type="text" v-model= "user.email" placeholder="Email"/>
               <input type="password" v-model= "user.mdp" placeholder="Mot de passe"/>
               <button @click="sendConnexion">Se connecter</button>
+        
             </form>
         </div>
       </div>

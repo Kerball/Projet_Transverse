@@ -6,10 +6,10 @@ const Administration = window.httpVueLoader('./components/Administration.vue')
 const Equipe = window.httpVueLoader('./components/Equipe.vue')
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/panier', component: Panier },
-  { path: '/inscription', component: Inscription },
+  { path: '/', component: Inscription },
   { path: '/connexion', component: Connexion },
+  { path: '/Catalogue', component: Home },
+  { path: '/Canaux', component: Panier },
   { path: '/administration', component: Administration },
   { path: '/equipe', component: Equipe },
 ]
