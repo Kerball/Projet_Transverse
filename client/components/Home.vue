@@ -3,13 +3,10 @@
     <article class="aticle" v-for="article in articles" :key="article.id">
       <div class="article-img" >
         <div :style="{ backgroundImage: 'url(' + article.image + ')' }">
+          
         </div>
       </div>
-      <div class="article-content" v-if="editingArticle.id !== article.id">
-        <div class="article-title">
-          <h2>{{ article.name }} </h2>
-        </div>
-        </div>
+      
             
     </article>
     <form @submit.prevent="addArticle">
@@ -88,13 +85,18 @@ module.exports = {
 
 <style scoped>
 .aticle{
-  border:2px solid black;
-  margin-top:10%;
+ margin-left:5.5%;
+  margin-top:2% ;
+  margin-right:10%;
+  display: inline-flex;
   
+
 }
 article {
   display: flex;
   height: auto;
+  
+  
 }
 
 .article-img {
@@ -103,23 +105,26 @@ article {
     max-width: 300px;
     height: auto;
     
+
 }
 
 .article-img div {
-  width: 100%;
-  height: 100%;
+  width: 465px;
+  height: 240px;
   background-size: cover;
   margin:auto;
- 
+  
 }
 
 .article-content {
   flex: 3;
+  
 }
 
 .article-title {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 textarea {
