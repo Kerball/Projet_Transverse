@@ -15,12 +15,12 @@
           <header>
             <img class ="img" src="/img/Capture.png">
             <nav class="nav">
-              <router-link to='/'class="rout" >Inscription</router-link>
-              <router-link to='/connexion' class="rout" >Connexion</router-link>
-              <router-link to='/Catalogue' class="rout">Catalogue</router-link>
-              <router-link to='/Canaux'class="rout" >Canaux</router-link>
+              <router-link to='/'class="rout" >Register</router-link>
+              <router-link to='/connexion' class="rout" >Login</router-link>
+              <router-link to='/Catalogue' class="rout">Catalog</router-link>
+              <router-link to='/Canaux'class="rout" >Channel</router-link>
               <router-link to='/administration' class="rout" >Profil</router-link>
-              <router-link to='/equipe' class="rout" >Equipe</router-link>
+              <router-link to='/equipe' class="rout" >Project</router-link>
             </nav>
           </header>
           <main>
@@ -42,8 +42,8 @@
         </div>
 
 
-        <footer>
-          <h2 style="color:white">Cédric CALPOTURA, Arthur LE NEGARET, Adrien KEREZOVIC,Paul-Antoine Dab , Benjamin Amsellem</h2>
+        <footer class="footer">
+          
         </footer>
         <script src="/vue-application.js"></script>
     </body>
@@ -63,7 +63,8 @@
       .rout{
           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
           border:2px solid rgb(0, 0, 0) ;
-         font-weight: 700;
+         font-weight: 100;
+         text-decoration: none;
          font-size: 25pt;
           margin: 3%;
           color: rgba(255, 255, 255, 0.911);
@@ -82,6 +83,15 @@
         margin-top:2%;
         margin-bottom: 3.5%;
         opacity:80%;
+      }
+
+      .footer{
+
+        background-color:rgb(243, 102, 8) ;
+        height: 70px;
+        
+
+
       }
     </style>
 

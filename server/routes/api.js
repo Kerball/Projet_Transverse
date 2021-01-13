@@ -2,6 +2,8 @@ const { response, request } = require('express')
 const express = require('express')
 const router = express.Router()
 const articles = require('../data/articles.js')
+const io = require('socket.io')(server);
+const server = require('http').createServer(express);
 
 
 const bcrypt = require('bcrypt')
@@ -257,6 +259,28 @@ function parseArticle (req, res, next) {
   next()
 }
 
+
+
+io.on('connection',() => {
+
+  console.log('une personne s\'est connecté')
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 router.route('/article/:articleId')
   /**
    * Cette route envoie un article particulier
@@ -293,4 +317,10 @@ router.route('/article/:articleId')
     res.send()
   })
 
+
+
 module.exports = router
+
+
+
+
