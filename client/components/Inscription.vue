@@ -1,12 +1,12 @@
 <template>
     <div>
-      <h1>Inscription</h1>
+      
         <div class="login-page">
           <div class="form">
             <form class="login-form">
               <input type="text" v-model= "user.email" placeholder="Email"/>
-              <input type="password" v-model= "user.mdp" placeholder="Mot de passe"/>
-              <button @click="sendInscription">S'inscrire</button>
+              <input type="password" v-model= "user.mdp" placeholder="Password"/>
+              <button @click="sendInscription">Sign up</button>
               <div v-if="this.display">Bravo, vous êtes inscrit !</div>
             </form>
           </div>
@@ -39,7 +39,8 @@
 <style scoped>
 
 .login-page {
-  width: 360px;
+  width: 25%;
+  height: 10%;
   padding: 8% 0 0;
   margin: auto;
 }
@@ -47,8 +48,7 @@
   position: relative;
   z-index: 1;
   background: #474645;
-  max-width: 360px;
-  margin: 0 auto 100px;
+  margin: auto auto 500px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);

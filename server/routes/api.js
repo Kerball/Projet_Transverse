@@ -4,6 +4,7 @@ const router = express.Router()
 const articles = require('../data/articles.js')
 
 
+
 const bcrypt = require('bcrypt')
 const { Client } = require('pg')
 
@@ -257,6 +258,13 @@ function parseArticle (req, res, next) {
   next()
 }
 
+
+
+
+
+
+
+
 router.route('/article/:articleId')
   /**
    * Cette route envoie un article particulier
@@ -293,4 +301,10 @@ router.route('/article/:articleId')
     res.send()
   })
 
+
+
 module.exports = router
+
+
+
+

@@ -1,13 +1,13 @@
 <template>
     <div>
-      <h1>Connexion</h1>
+      
         <div v-if="connected"> Vous êtes connecté. </div>
         <div class="login-page">
           <div class="form">
             <form class="login-form">
               <input type="text" v-model= "user.email" placeholder="Email"/>
-              <input type="password" v-model= "user.mdp" placeholder="Mot de passe"/>
-              <button @click="sendConnexion">Se connecter</button>
+              <input type="password" v-model= "user.mdp" placeholder="Password"/>
+              <button @click="sendConnexion">Sign in</button>
         
             </form>
         </div>
@@ -43,16 +43,17 @@ module.exports = {
 
 <style scoped>
 .login-page {
-  width: 360px;
+  width: 25%;
+  height: 10%;
   padding: 8% 0 0;
   margin: auto;
 }
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
+  background: #474645;
+  
+  margin: auto auto 500px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -72,7 +73,7 @@ module.exports = {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background:  #07c0ee;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -83,7 +84,7 @@ module.exports = {
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: #0288aa;
 }
 .form .message {
   margin: 15px 0 0;
