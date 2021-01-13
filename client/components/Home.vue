@@ -3,7 +3,11 @@
     <article class="aticle" v-for="article in articles" :key="article.id">
       <div class="article-img" >
         <div :style="{ backgroundImage: 'url(' + article.image + ')' }">
+         
+            <a href="#/Canaux"><button type="button" class="test"></button></a>
+            
           
+
         </div>
       </div>
       
@@ -85,13 +89,26 @@ module.exports = {
 
 <style scoped>
 .aticle{
- margin-left:5.5%;
+  padding-right: 0;
+  margin-left:5.5%;
   margin-top:2% ;
   margin-right:10%;
   display: inline-flex;
   
 
 }
+.test{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+.test:hover{
+  background: rgba(96, 100, 112, 0.212);
+  }
+
+
 article {
   display: flex;
   height: auto;

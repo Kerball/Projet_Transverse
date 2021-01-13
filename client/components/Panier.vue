@@ -1,19 +1,7 @@
 <template>
   <div>
     <h2>Mon Panier</h2>
-    <div v-for= "objet in panier.articles" :key= "objet.id">
-      <div class="cbo" :style="{backgroundImage: 'url('+imagi(objet.id)+')'}"></div>
-      <div class="item" >
-       {{nomArticle(objet.id)}} {{ objet.quantity }}
-       <button @click= "incremQuant(objet.id)">+</button>
-       <button v-if= "objet.quantity > 1" @click= "decremQuant(objet.id)">-</button>
-       <button @click= "deleteArticlePanier(objet.id)">Retirer</button>
-     </div>
-    </div>
-    <div>
-      Le prix du panier est de : {{ totalPrice }} euros
-    </div>
-    <button @click="pay()"> Payer </button>
+
   </div>
 </template>
 
