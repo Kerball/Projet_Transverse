@@ -7,7 +7,7 @@
               <input type="text" v-model= "user.email" placeholder="Email"/>
               <input type="password" v-model= "user.mdp" placeholder="Password"/>
               <button @click="sendInscription">Sign up</button>
-              <div v-if="this.display">Bravo, vous êtes inscrit !</div>
+              <div v-if="this.display" style="color:white"> <br>Congrats, you joined the team !!</div>
             </form>
           </div>
         </div>
@@ -48,6 +48,7 @@
   position: relative;
   z-index: 1;
   background: #474645;
+  min-width: 100%;
   margin: auto auto 500px;
   padding: 45px;
   text-align: center;

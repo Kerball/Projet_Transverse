@@ -1,12 +1,37 @@
 const express = require('express')
+const app = express()
 const session = require('express-session')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
-
+const server = require('http').createServer(app)
+const io = require('socket.io')(server)
 const apiRouter = require('./routes/api.js')
 
-const app = express()
+var $ = require( "jquery" )
+
+
+app.get('/Canaux', (req,res) => {
+
+    res.sendFile(`${__dirname}/client/components/Canaux.vue`)
+
+})
+
+io.on('connection' , (socket) =>{
+    console.log('Un utilisateur s\'est connecte') 
+    socket.on('disconnect' , (msg) => {
+
+        console.log('Un utilisateur s\'est deconnecte') 
+
+}) 
+ 
+    socket.on('chat message' , (msg) => {
+
+        io.emit('chat messgae' , msg)
+
+}) 
+})
+
 
 app.use(logger('dev'))
 app.use(express.json())

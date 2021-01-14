@@ -1,5 +1,5 @@
 const Home = window.httpVueLoader('./components/Home.vue')
-const Panier = window.httpVueLoader('./components/Panier.vue')
+const Panier = window.httpVueLoader('./components/Canaux.vue')
 const Inscription = window.httpVueLoader('./components/Inscription.vue')
 const Connexion = window.httpVueLoader('./components/Connexion.vue')
 const Administration = window.httpVueLoader('./components/Administration.vue')
@@ -66,9 +66,7 @@ var app = new Vue({
       await axios.put('/api/article/' + newArticle.id, newArticle)
       const article = this.articles.find(a => a.id === newArticle.id)
       article.name = newArticle.name
-      article.description = newArticle.description
       article.image = newArticle.image
-      article.price = newArticle.price
     },
     async deleteArticle (articleId) {
       await axios.delete('/api/article/' + articleId)
@@ -82,12 +80,14 @@ var app = new Vue({
   async sendConnexion(user){
        response = await axios.post('/api/login', user)
        if (response.data) {
+        console.log(response)
         this.connected = true
       }
   },
   async getConnexion(){
     response = await axios.get('/api/me')
     if (response.data) {
+      console.log(response)
       this.connected = true
     }
     return

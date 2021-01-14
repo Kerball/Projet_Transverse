@@ -1,13 +1,14 @@
 <template>
     <div>
       
-        <div v-if="connected"> Vous êtes connecté. </div>
+        
         <div class="login-page">
           <div class="form">
             <form class="login-form">
               <input type="text" v-model= "user.email" placeholder="Email"/>
               <input type="password" v-model= "user.mdp" placeholder="Password"/>
               <button @click="sendConnexion">Sign in</button>
+              <div v-if="connected" style="color:white"><br>Connected</div>
         
             </form>
         </div>
@@ -52,7 +53,7 @@ module.exports = {
   position: relative;
   z-index: 1;
   background: #474645;
-  
+  min-width: 100%;
   margin: auto auto 500px;
   padding: 45px;
   text-align: center;

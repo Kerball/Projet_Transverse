@@ -14,14 +14,17 @@
             
     </article>
     <form @submit.prevent="addArticle">
-      <h2>Nouveau produit à ajouter</h2>
-      <input type="text" v-model="newArticle.name" placeholder="Nom du produit" required>
-      <input type="number" v-model="newArticle.price" placeholder="Prix" required>
-      <textarea type="text" v-model="newArticle.description" required></textarea>
-      <input type="text" v-model="newArticle.image" placeholder="Lien vers l'image">
-      <button type="submit">Ajouter</button>
+      <h2 style="color:whitesmoke">New Game</h2>
+      <input type="text" v-model="newArticle.name" placeholder="Name" required>
+      <input type="number" v-model="newArticle.price" placeholder="Style" required>
+      <textarea type="text" v-model="newArticle.description" placeholder="Description" required></textarea>
+      <input type="text" v-model="newArticle.image" placeholder="Link">
+      <button type="submit">Add</button>
     </form>
   </div>
+    
+  
+
 </template>
 
 <script>
@@ -39,14 +42,14 @@ module.exports = {
         name: '',
         description: '',
         image: '',
-        price: 0
+        style:''
       },
       editingArticle: {
         id: -1,
         name: '',
         description: '',
         image: '',
-        price: 0
+        style:''
       }
     }
   },
@@ -66,9 +69,8 @@ module.exports = {
     editArticle (article) {
       this.editingArticle.id = article.id
       this.editingArticle.name = article.name
-      this.editingArticle.description = article.description
       this.editingArticle.image = article.image
-      this.editingArticle.price = article.price
+     
     },
     sendEditArticle () {
       this.$emit('update-article', this.editingArticle)

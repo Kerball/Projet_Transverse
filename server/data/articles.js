@@ -68,7 +68,63 @@ const articles = [
     description: "Créer ta propre vie virtuelle",
     image: 'https://clubarthurdent.com/wp-content/uploads/2020/04/H2x1_NSwitch_AnimalCrossingNewHorizons_image1600w.jpg',
     style: 'Simulation'
-  }
+  },
+  {
+    id: 11,
+    name: 'Minecraft',
+    description: "Créer ta propre vie virtuelle",
+    image: 'https://images-eu.ssl-images-amazon.com/images/I/510KWdgceEL.jpg',
+    style: 'Simulation'
+  },
+  {
+    id: 12,
+    name: 'CS GO',
+    description: "Jeu de tirs stratégique",
+    image: 'https://www.legal-esport.com/imactus/csgo.jpg',
+    style: 'Jeu de tirs'
+  },
+  {
+    id: 13,
+    name: 'For Honor',
+    description: "Combat médiéval",
+    image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/304390/capsule_616x353.jpg?t=1607622851',
+    style: 'Combat'
+  },
+  {
+    id: 14,
+    name: 'Mario Kart',
+    description: "Jeux de voiture",
+    image: 'https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_MarioKart8_image1600w.jpg',
+    style: 'Simulation'
+  },
+  {
+    id: 15,
+    name: 'Battle front',
+    description: "Jeux de tirs dans le monde de Star Wars",
+    image: 'https://www.fredzone.org/wp-content/uploads/2017/09/star_wars_battlefront.jpg',
+    style: 'Jeu de Tirs'
+  },
+  {
+    id:16,
+    name: 'Destiny',
+    description:"Jeux de Tirs futuriste",
+    image:'https://www.consollection.com/image/actualite/destiny-2-le-test-sur-pc-8881.jpg',
+    style:'FPS',
+    },
+    {
+    id:17,
+    name: 'Hearthstone',
+    description:"Construit ton deck de carte et combat d'autre joueurs",
+    image:'https://reshape.sport1.de/c/t/919AA215-5250-4E18-B67E-43D9F0F17C7C/1200x675',
+    style:'carte',
+    },
+    {
+    id:18,
+    name: 'Overwatch',
+    description:"Jeu de tirs futuriste",
+    image:'https://www.hotspawn.com/app/uploads/2018/08/overwatch_terms-1024x682.jpg',
+    style:'FPS',
+    }
 ]
 
 module.exports = articles

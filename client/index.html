@@ -9,6 +9,7 @@
         <script src="https://cdn.jsdelivr.net/npm/http-vue-loader/src/httpVueLoader.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue-router/dist/vue-router.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="jquery-3.5.1.min.js"></script>
     </head>
     <body style="background-color:rgb(29, 35, 49);">
         <div id="app">
@@ -28,15 +29,10 @@
               :articles="articles"
               :panier="panier"
               :connected="connected"
-              @ajou-panier='ajouPanier'
               @add-article="addArticle"
-              @delete-article-panier="deleteArticlePanier"
-              @up-quant="upQuant"
-              @delete-article="deleteArticle"
-              @update-article="updateArticle"
               @send-inscription="sendInscription"
               @send-connexion="sendConnexion"
-              @pay="pay"
+              
             ></router-view>
           </main>
         </div>
@@ -88,6 +84,7 @@
 
         background-color:rgb(243, 102, 8) ;
         height: 70px;
+       
         
 
 
