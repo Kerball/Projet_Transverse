@@ -23,12 +23,15 @@ var app = new Vue({
   el: '#app',
   data: {
     articles: [],
+    
     panier: {
       createdAt: null,
       updatedAt: null,
-      articles: []
+      articles: [],
+     
     },
     connected: false
+    
   },
   async mounted () {
     const res = await axios.get('/api/articles')

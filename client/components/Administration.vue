@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Your account</h1>
+      <h1>Your account </h1>
       <div v-if="connected">
         <img class="img1" src="/img/connected.png" alt="connected">
         <p class ="text">Congratulation you are connected you can now acces to all our features, 
@@ -18,15 +18,16 @@
 <script>
 module.exports = {
   props: {
-    connected: { type: Boolean }
+    connected: { type: Boolean },
+    
   },
   async mounted () {},
   methods: {}
 }
 </script>
 
-<style scoped>
-</style>
+
+
 <style  scoped>
 
 

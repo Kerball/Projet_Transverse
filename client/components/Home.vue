@@ -13,14 +13,17 @@
       
             
     </article>
+
+    <div v-if="connected">
     <form @submit.prevent="addArticle">
       <h2 style="color:whitesmoke">New Game</h2>
       <input type="text" v-model="newArticle.name" placeholder="Name" required>
-      <input type="number" v-model="newArticle.price" placeholder="Style" required>
+      <input type="number" v-model="newArticle.price" placeholder="Price" required>
       <textarea type="text" v-model="newArticle.description" placeholder="Description" required></textarea>
       <input type="text" v-model="newArticle.image" placeholder="Link">
       <button type="submit">Add</button>
     </form>
+    </div>
   </div>
     
   
@@ -32,7 +35,8 @@ module.exports = {
   name : "Home",
   props: {
     articles: { type: Array, default: [] },
-    panier: { type: Object }
+    panier: { type: Object },
+    connected: { type: Boolean }
   },
   async mounted () {
   },
