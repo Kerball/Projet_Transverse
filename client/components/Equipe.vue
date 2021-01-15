@@ -14,16 +14,24 @@
         </div>
       <div style="color:white" class ="flex">
           <div >
-            <h2>Cédric CALPOTURA</h2>
+            <h2>cedric.calpotura@efrei.net</h2>
               <img src="/img/cedric.png" >
           </div>
           <div>
-             <h2>Arthur LE NEGARET</h2>
-               <img src="/img/arthur.png" >
+             <h2>arthur.le.negaret@efrei.net</h2>
+               <img class = "img2" src="/img/arthur.png" >
           </div>
           <div>
-              <h2>Adrien KEREZOVIC</h2>
+              <h2>adrien.kerezovic@efrei.net</h2>
                 <img src="/img/adrien.png" >
+          </div>
+          <div>
+              <h2>benjamin.amsellem@efrei.net</h2>
+                <img src="/img/benji.jpg" >
+          </div>
+          <div>
+              <h2>paul-antoine.dab@efrei.net</h2>
+                <img class = "img2" src="/img/PA.jpg" >
           </div>
         </div>
       </div>
@@ -51,6 +59,13 @@ img{
  margin-right: 100px;
  height: 300px;
  width:260px;
+
+}
+
+.img2{
+ margin-right: 100px;
+ height: 300px;
+ width:200px;
 
 }
 
